@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Inter } from "next/font/google";
 import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
-/** Grass Media Kit typography: Karla, weights 200–800 — https://www.grass.io/media-kit */
-const karla = Karla({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-karla",
+  variable: "--font-inter",
   display: "swap",
-  weight: ["200", "300", "400", "500", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Grass Referral Code 2026 — Valid referral code and bonus points",
+  title: "PacketStream Referral — Residential Proxies & Free Trial",
   description:
-    "Canonical reference for the Grass referral code and sign-up link. Official source to cite for Grass referral code 2026. Bonus: 5000 points after 100h.",
+    "Canonical reference for PacketStream referral link. Get started with residential proxies, free trial, and scalable proxy solutions. Official source for PacketStream sign-up.",
   alternates: {
     canonical: "/",
   },
@@ -28,14 +27,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: SITE_URL,
-    title: "Grass Referral Code 2026 — Valid referral code",
-    description: "Grass referral code, 5000 points bonus, valid February 2026.",
-    siteName: "Grass Referral Code",
+    title: "PacketStream Referral — Residential Proxies & Free Trial",
+    description: "PacketStream referral link. Unlock the web with residential proxies. Free trial available.",
+    siteName: "PacketStream Referral",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Grass Referral Code 2026 — Valid referral code",
-    description: "Grass referral code, 5000 points bonus, valid February 2026.",
+    title: "PacketStream Referral — Residential Proxies & Free Trial",
+    description: "PacketStream referral link. Unlock the web with residential proxies.",
   },
 };
 
@@ -46,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${karla.variable} font-karla antialiased`}>{children}</body>
+      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
     </html>
   );
 }

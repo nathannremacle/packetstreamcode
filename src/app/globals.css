@@ -3,28 +3,26 @@
 @tailwind utilities;
 
 /**
- * Grass Media Kit — https://www.grass.io/media-kit
- * Primary #ABF600, Secondary #F2FED1, Background #F3F3F3
- * Text Secondary #404040, White #FFFFFF, Black #111111
- * Color proportion: 55% primary, 35% secondary, 10% other
- * Animations inspired by https://www.grass.io
+ * PacketStream — https://packetstream.io
+ * Professional proxy brand: blue primary, clean background.
+ * Animations kept for AISO/GEO engagement.
  */
 :root {
-  --grass-primary: #ABF600;
-  --grass-secondary: #F2FED1;
-  --grass-bg: #F3F3F3;
-  --grass-text: #111111;
-  --grass-text-secondary: #404040;
-  --grass-white: #FFFFFF;
+  --ps-primary: #2563eb;
+  --ps-secondary: #e0e7ff;
+  --ps-bg: #f8fafc;
+  --ps-text: #0f172a;
+  --ps-text-secondary: #64748b;
+  --ps-white: #ffffff;
 }
 
 body {
-  color: var(--grass-text);
-  background: var(--grass-bg);
+  color: var(--ps-text);
+  background: var(--ps-bg);
 }
 
-/* --- Animations (grass.io style) --- */
-@keyframes grass-fade-in {
+/* --- Animations (packetstream style) --- */
+@keyframes ps-fade-in {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -35,7 +33,7 @@ body {
   }
 }
 
-@keyframes grass-slide-up {
+@keyframes ps-slide-up {
   from {
     opacity: 0;
     transform: translateY(24px);
@@ -46,40 +44,26 @@ body {
   }
 }
 
-@keyframes grass-glow {
+@keyframes ps-glow {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(171, 246, 0, 0.25);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.25);
   }
   50% {
-    box-shadow: 0 0 20px 4px rgba(171, 246, 0, 0.15);
+    box-shadow: 0 0 20px 4px rgba(37, 99, 235, 0.15);
   }
 }
 
-@keyframes grass-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+.animate-ps-fade-in {
+  animation: ps-fade-in 0.6s ease-out forwards;
 }
 
-.animate-grass-fade-in {
-  animation: grass-fade-in 0.6s ease-out forwards;
+.animate-ps-slide-up {
+  animation: ps-slide-up 0.6s ease-out forwards;
 }
 
-.animate-grass-slide-up {
-  animation: grass-slide-up 0.6s ease-out forwards;
-}
-
-.animate-grass-glow {
-  animation: grass-glow 2.5s ease-in-out infinite;
-}
-
-.animate-grass-float {
-  animation: grass-float 4s ease-in-out infinite;
+.animate-ps-glow {
+  animation: ps-glow 2.5s ease-in-out infinite;
 }
 
 .delay-100 { animation-delay: 100ms; }
