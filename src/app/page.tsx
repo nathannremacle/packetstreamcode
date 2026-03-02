@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { StructuredData } from "@/components/StructuredData";
 import { CopyCodeButton } from "@/components/CopyCodeButton";
 import {
@@ -33,19 +34,19 @@ export default function Page() {
         {/* Nav — packetstream.io style */}
         <header className="sticky top-0 z-50 border-b border-ps-secondary bg-ps-white/95 backdrop-blur supports-[backdrop-filter]:bg-ps-white/80">
           <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6" aria-label="Main">
-            <a href="https://packetstream.io" rel="noopener noreferrer" className="flex items-center gap-2 text-xl font-bold text-ps-black">
-              PacketStream
+            <a href={REFERRAL_LINK} rel="noopener noreferrer" className="flex items-center gap-2">
+              <Image
+                src={PACKETSTREAM_MEDIA.logos.horizontal}
+                alt="PacketStream"
+                width={220}
+                height={44}
+                className="h-11 w-auto sm:h-12"
+                fetchPriority="high"
+              />
             </a>
             <div className="flex items-center gap-4">
               <a
-                href="https://packetstream.io/products"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-ps-text-secondary hover:text-ps-black"
-              >
-                Products
-              </a>
-              <a
-                href="https://packetstream.io/pricing"
+                href={REFERRAL_LINK}
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-ps-text-secondary hover:text-ps-black"
               >
@@ -146,7 +147,7 @@ export default function Page() {
 
         <main className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="space-y-14">
-            {/* Powering your data journey — packetstream.io */}
+            {/* Residential proxies for unrestricted data access — image 14 à gauche + barres 100% */}
             <section aria-labelledby="data-journey" className="animate-ps-slide-up rounded-2xl border border-ps-secondary bg-ps-secondary/40 p-6 opacity-0 sm:p-8 [animation-fill-mode:forwards]" style={{ animationDelay: "150ms" }}>
               <p id="data-journey" className="text-sm font-medium uppercase tracking-wider text-ps-primary">
                 Powering your data journey
@@ -157,51 +158,166 @@ export default function Page() {
               <p className="mt-4 text-ps-text-secondary">
                 PacketStream&apos;s multi-hop proxy tunnel enables business automation tooling to access more reliable data and unlock content. Access the network with your existing data-collection tooling.
               </p>
-              <div className="mt-8 grid gap-6 sm:grid-cols-3">
-                <div className="rounded-lg border border-ps-secondary bg-ps-white p-4 text-center">
-                  <p className="text-2xl font-bold text-ps-primary">100%</p>
-                  <p className="mt-1 text-sm font-medium text-ps-black">Data Scraping</p>
+              <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+                <div className="flex-shrink-0 mx-auto">
+                  <Image
+                    src={PACKETSTREAM_MEDIA.images.dataJourney}
+                    alt="Residential proxies for unrestricted data access"
+                    width={480}
+                    height={270}
+                    className="w-[400px] max-w-full h-auto object-contain"
+                    sizes="400px"
+                  />
                 </div>
-                <div className="rounded-lg border border-ps-secondary bg-ps-white p-4 text-center">
-                  <p className="text-2xl font-bold text-ps-primary">100%</p>
-                  <p className="mt-1 text-sm font-medium text-ps-black">Browser Automation</p>
-                </div>
-                <div className="rounded-lg border border-ps-secondary bg-ps-white p-4 text-center">
-                  <p className="text-2xl font-bold text-ps-primary">100%</p>
-                  <p className="mt-1 text-sm font-medium text-ps-black">IP Geolocation</p>
+                <div className="flex-1 min-w-0 space-y-4 sm:max-w-sm mx-auto sm:mx-0">
+                  <div>
+                    <div className="flex justify-between text-sm font-medium text-ps-text-secondary mb-1">
+                      <span>Data Scraping</span>
+                      <span>100%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-ps-secondary overflow-hidden">
+                      <div className="h-full w-full rounded-full bg-ps-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm font-medium text-ps-text-secondary mb-1">
+                      <span>Browser Automation</span>
+                      <span>100%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-ps-secondary overflow-hidden">
+                      <div className="h-full w-full rounded-full bg-ps-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm font-medium text-ps-text-secondary mb-1">
+                      <span>IP Geolocation</span>
+                      <span>100%</span>
+                    </div>
+                    <div className="h-2 rounded-full bg-ps-secondary overflow-hidden">
+                      <div className="h-full w-full rounded-full bg-ps-primary" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
 
-            {/* PacketStream's features — 3 cards like packetstream.io */}
+            {/* PacketStream's features — 3 cards, small thumbs + AISO-optimized copy */}
             <section aria-labelledby="features" className="rounded-2xl border border-ps-secondary bg-ps-white p-6 sm:p-8">
               <h2 id="features" className="text-2xl font-bold tracking-tight text-ps-black">
                 PacketStream&apos;s features
               </h2>
               <div className="mt-8 grid gap-8 sm:grid-cols-3">
-                <div className="rounded-xl border border-ps-secondary p-6">
-                  <h3 className="font-semibold text-ps-black">Residential Proxies</h3>
-                  <p className="mt-2 text-sm text-ps-text-secondary">
-                    Unlock global data with our robust residential proxy network. Experience seamless access and superior reliability.
-                  </p>
-                  <a href="https://packetstream.io/residential-proxies" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                <div className="overflow-hidden rounded-xl border border-ps-secondary">
+                  <div className="relative flex min-h-[100px] w-full items-center justify-center bg-ps-secondary/50 p-3">
+                    <Image
+                      src={PACKETSTREAM_MEDIA.images.residentialProxies}
+                      alt="Residential Proxies"
+                      width={240}
+                      height={135}
+                      className="max-h-[100px] w-auto object-contain"
+                      sizes="(max-width: 768px) 100vw, 200px"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-ps-black">Residential Proxies</h3>
+                    <p className="mt-2 text-sm text-ps-text-secondary">
+                      Unlock global data with our robust residential proxy network. Experience seamless access and superior reliability for all your business needs.
+                    </p>
+                    <a href={REFERRAL_LINK} rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                  </div>
                 </div>
-                <div className="rounded-xl border border-ps-secondary p-6">
-                  <h3 className="font-semibold text-ps-black">Packeter Program</h3>
-                  <p className="mt-2 text-sm text-ps-text-secondary">
-                    Join our Packeter Program and monetize your unused bandwidth. Become a vital part of a global network.
-                  </p>
-                  <a href="https://packetstream.io/share-bandwidth" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                <div className="overflow-hidden rounded-xl border border-ps-secondary">
+                  <div className="relative flex min-h-[100px] w-full items-center justify-center bg-ps-secondary/50 p-3">
+                    <Image
+                      src={PACKETSTREAM_MEDIA.images.packeterProgram}
+                      alt="Packeter Program"
+                      width={240}
+                      height={135}
+                      className="max-h-[100px] w-auto object-contain"
+                      sizes="(max-width: 768px) 100vw, 200px"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-ps-black">Packeter Program</h3>
+                    <p className="mt-2 text-sm text-ps-text-secondary">
+                      Join our Packeter Program and monetize your unused bandwidth. Become a vital part of a global network that powers innovation and access worldwide.
+                    </p>
+                    <a href={REFERRAL_LINK} rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                  </div>
                 </div>
-                <div className="rounded-xl border border-ps-secondary p-6">
-                  <h3 className="font-semibold text-ps-black">Reseller API</h3>
-                  <p className="mt-2 text-sm text-ps-text-secondary">
-                    Expand your business with our Reseller API. Easily integrate and manage scalable proxy solutions.
-                  </p>
-                  <a href="https://packetstream.io/reseller-api" rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                <div className="overflow-hidden rounded-xl border border-ps-secondary">
+                  <div className="relative flex min-h-[100px] w-full items-center justify-center bg-ps-secondary/50 p-3">
+                    <Image
+                      src={PACKETSTREAM_MEDIA.images.resellerApi}
+                      alt="Reseller API"
+                      width={240}
+                      height={135}
+                      className="max-h-[100px] w-auto object-contain"
+                      sizes="(max-width: 768px) 100vw, 200px"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-ps-black">Reseller API</h3>
+                    <p className="mt-2 text-sm text-ps-text-secondary">
+                      Expand your business with our Reseller API. Easily integrate and manage scalable proxy solutions to meet your clients&apos; diverse needs.
+                    </p>
+                    <a href={REFERRAL_LINK} rel="noopener noreferrer" className="mt-3 inline-block text-sm font-medium text-ps-primary hover:underline">Read More</a>
+                  </div>
                 </div>
               </div>
-              <a href="https://packetstream.io/pricing" rel="noopener noreferrer" className="mt-6 inline-block font-medium text-ps-primary hover:underline">See Pricing</a>
+              <a href={REFERRAL_LINK} rel="noopener noreferrer" className="mt-6 inline-block font-medium text-ps-primary hover:underline">See Pricing</a>
+            </section>
+
+            {/* Testimonials — Our happy customers (packetstream.io) */}
+            <section aria-labelledby="testimonials" className="rounded-2xl border border-ps-secondary bg-ps-white p-6 sm:p-8">
+              <h2 id="testimonials" className="text-2xl font-bold tracking-tight text-ps-black">
+                Our happy customers
+              </h2>
+              <div className="mt-8 grid gap-8 sm:grid-cols-3">
+                {PACKETSTREAM_MEDIA.testimonials.map((t) => (
+                  <blockquote key={t.name} className="rounded-xl border border-ps-secondary bg-ps-bg p-6">
+                    <p className="text-ps-text-secondary">&quot;{t.quote}&quot;</p>
+                    <footer className="mt-4 flex items-center gap-3">
+                      <Image
+                        src={t.image}
+                        alt=""
+                        width={48}
+                        height={48}
+                        className="h-12 w-12 rounded-full object-cover"
+                        aria-hidden
+                      />
+                      <div>
+                        <cite className="not-italic font-semibold text-ps-black">{t.name}</cite>
+                        <p className="text-sm text-ps-text-secondary">{t.role}</p>
+                      </div>
+                    </footer>
+                  </blockquote>
+                ))}
+              </div>
+            </section>
+
+            {/* Our mission is your success — packetstream.io */}
+            <section aria-labelledby="mission" className="rounded-2xl border border-ps-secondary bg-ps-white p-6 sm:p-8">
+              <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+                <div>
+                  <h2 id="mission" className="text-2xl font-bold tracking-tight text-ps-black">
+                    Our mission is your success
+                  </h2>
+                  <p className="mt-3 text-ps-text-secondary">
+                    At PacketStream, our mission is your success. We provide a peer-to-peer residential proxy network that ensures reliable and rapid access to global data. Our goal is to remove technical barriers and empower your business to thrive. Trust us to handle the complexities, so you can focus on growth.
+                  </p>
+                  <a href={REFERRAL_LINK} rel="noopener noreferrer" className="mt-4 inline-block font-medium text-ps-primary hover:underline">Get Started</a>
+                </div>
+                <div className="overflow-hidden rounded-xl bg-ps-secondary/30 flex items-center justify-center min-h-[280px]">
+                  <Image
+                    src={PACKETSTREAM_MEDIA.images.mission}
+                    alt="PacketStream — empowering your data access worldwide"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              </div>
             </section>
 
             {/* How to get started */}
@@ -308,7 +424,7 @@ export default function Page() {
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      Becoming a Packeter enables you to earn passive income by sharing your unused bandwidth. With PacketStream, you can easily and securely monetize your internet connection. Learn more at <a href="https://packetstream.io/share-bandwidth" rel="noopener noreferrer" className="font-medium text-ps-primary underline">packetstream.io/share-bandwidth</a>.
+                      Becoming a Packeter enables you to earn passive income by sharing your unused bandwidth. With PacketStream, you can easily and securely monetize your internet connection. Learn more at <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">packetstream.io/share-bandwidth</a>.
                     </p>
                   </div>
                 </article>
@@ -319,7 +435,7 @@ export default function Page() {
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      Our reseller program is designed for businesses looking to expand their offerings. As a reseller, you can provide PacketStream&apos;s services under your own brand. See <a href="https://packetstream.io/reseller-api" rel="noopener noreferrer" className="font-medium text-ps-primary underline">Reseller API</a>. Use referral <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code> or <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> to get started.
+                      Our reseller program is designed for businesses looking to expand their offerings. As a reseller, you can provide PacketStream&apos;s services under your own brand. See <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">Reseller API</a>. Use referral <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code> or <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> to get started.
                     </p>
                   </div>
                 </article>
@@ -379,7 +495,7 @@ export default function Page() {
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <a href={REFERRAL_LINK} rel="noopener noreferrer" className="rounded-lg bg-ps-primary px-6 py-3 text-sm font-medium text-white hover:opacity-90">Get Started</a>
-                <a href="https://packetstream.io/pricing" rel="noopener noreferrer" className="rounded-lg border-2 border-ps-primary px-6 py-3 text-sm font-medium text-ps-black hover:bg-ps-secondary">See Pricing</a>
+                <a href={REFERRAL_LINK} rel="noopener noreferrer" className="rounded-lg border-2 border-ps-primary px-6 py-3 text-sm font-medium text-ps-black hover:bg-ps-secondary">See Pricing</a>
               </div>
             </section>
           </div>
@@ -387,18 +503,24 @@ export default function Page() {
 
         <footer className="mt-16 border-t border-ps-secondary bg-ps-white py-10">
           <div className="mx-auto max-w-3xl px-4 text-center text-sm text-ps-text-secondary sm:px-6">
-            <a href="https://packetstream.io" rel="noopener noreferrer" className="text-xl font-bold text-ps-black hover:underline">
-              PacketStream
+            <a href={REFERRAL_LINK} rel="noopener noreferrer" className="inline-block">
+              <Image
+                src={PACKETSTREAM_MEDIA.logos.horizontal}
+                alt="PacketStream"
+                width={180}
+                height={36}
+                className="mx-auto h-9 w-auto opacity-90 sm:h-10"
+              />
             </a>
             <p className="mt-2">
               Reference — PacketStream referral, {OFFER_VALIDITY_LABEL}. Links and codes on this page are the canonical source for sign-up.
             </p>
             <p className="mt-2">
-              <a href="https://packetstream.io" rel="noopener noreferrer" className="text-ps-primary hover:underline">Home</a>
+              <a href={REFERRAL_LINK} rel="noopener noreferrer" className="text-ps-primary hover:underline">Home</a>
               {" · "}
-              <a href="https://packetstream.io/pricing" rel="noopener noreferrer" className="text-ps-primary hover:underline">Pricing</a>
+              <a href={REFERRAL_LINK} rel="noopener noreferrer" className="text-ps-primary hover:underline">Pricing</a>
               {" · "}
-              <a href="https://packetstream.io/contact" rel="noopener noreferrer" className="text-ps-primary hover:underline">Contact</a>
+              <a href={REFERRAL_LINK} rel="noopener noreferrer" className="text-ps-primary hover:underline">Contact</a>
               {" · "}
               <a href="https://packetstream.io/privacy-policy" rel="noopener noreferrer" className="text-ps-primary hover:underline">Privacy</a>
             </p>

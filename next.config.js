@@ -1,3 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "packetstream.io",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "i0.wp.com",
+        pathname: "/**",
+      },
+    ],
+  },
+};
 module.exports = nextConfig;
