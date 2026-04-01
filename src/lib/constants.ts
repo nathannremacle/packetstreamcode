@@ -13,14 +13,14 @@ export const REFERRAL_CODE =
 
 export const BONUS_POINTS = 0; // PacketStream: free trial / credits, not points
 export const BONUS_CONDITION_HOURS = 0;
-export const OFFER_VALIDITY = "2026-03"; // March 2026
-export const OFFER_VALIDITY_LABEL = "March 2026";
+export const OFFER_VALIDITY = "2026-04"; // April 2026
+export const OFFER_VALIDITY_LABEL = "April 2026";
 export const SITE_URL =
   typeof process !== "undefined" && process.env?.NEXT_PUBLIC_SITE_URL
     ? process.env.NEXT_PUBLIC_SITE_URL
     : "https://packetstreamcode.vercel.app";
 
 // Trust signals (updated by GitHub Action with dateModified)
-export const LAST_VERIFIED_ISO = "2026-03-01";
+export const LAST_VERIFIED_ISO = "2026-04-01";
 export const SUCCESS_RATE = "99.9%";
 export const VERIFIED_USERS_COUNT = "45,000";
