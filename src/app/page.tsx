@@ -524,6 +524,11 @@ export default function Page() {
               {" · "}
               <a href="https://packetstream.io/privacy-policy" rel="noopener noreferrer" className="text-ps-primary hover:underline">Privacy</a>
             </p>
+            <p className="mt-8 text-xs opacity-50 transition-opacity hover:opacity-100">
+              <a href="https://www.init42.be/" target="_blank" rel="noopener" className="hover:text-ps-primary transition-colors">
+                Développeur web freelance à Liège - INIT42.
+              </a>
+            </p>
           </div>
         </footer>
       </article>
