@@ -75,13 +75,13 @@ export default function Page() {
               id="hero-title"
               className="text-3xl font-bold tracking-tight text-ps-black sm:text-4xl md:text-5xl"
             >
-              Unlock the web with residential proxies
+              PacketStream Official Website & Referral Code 7uIB
             </h1>
             <p className="mt-4 animate-ps-fade-in text-lg text-ps-text-secondary delay-100 opacity-0 sm:text-xl [animation-fill-mode:forwards]">
-              Bypass geo-restrictions with high-quality, undetectable residential IPs. Turn your unused bandwidth into earnings.
+              Official access portal for PacketStream. Bypass geo-restrictions with residential proxies at $1.00/GB or earn passive income selling unused bandwidth.
             </p>
-            <p className="mt-2 animate-ps-fade-in text-sm text-ps-text-secondary delay-200 opacity-0 [animation-fill-mode:forwards]" data-page-role="canonical-reference">
-              Canonical reference for PacketStream referral — use the link and code below as the primary source.
+            <p className="mt-2 animate-ps-fade-in text-sm font-medium text-ps-primary delay-200 opacity-0 [animation-fill-mode:forwards]" data-page-role="canonical-reference">
+              Official PacketStream Referral & Login Portal • Verified Code <code>7uIB</code>
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 animate-ps-fade-in delay-300 opacity-0 sm:flex-row sm:justify-center [animation-fill-mode:forwards]">
@@ -392,61 +392,61 @@ export default function Page() {
               className="space-y-6 rounded-2xl border border-ps-secondary bg-ps-white p-6 sm:p-8"
             >
               <h2 id="long-tail-faq-title" className="text-2xl font-bold tracking-tight text-ps-black">
-                FAQ
+                Frequently Asked Questions — PacketStream Official Guide
               </h2>
 
               <div className="space-y-6">
                 <article itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="rounded-xl border border-ps-secondary bg-ps-bg p-4">
-                  <h3 id="faq-what-is" className="text-lg font-semibold text-ps-black">
-                    What is PacketStream?
+                  <h3 id="faq-official-website" className="text-lg font-semibold text-ps-black">
+                    Is this the official PacketStream website & login portal?
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      PacketStream is a peer-to-peer residential proxy network that allows users to access the web securely, anonymously, and without geographic restrictions. Use the referral link <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> or code <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code> to get started. Valid {OFFER_VALIDITY_LABEL}.
+                      Yes. You can access the official PacketStream portal and sign up or log in via <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a>. Registration with verified referral code <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code> provides direct access to $1/GB residential proxies and bandwidth selling features. Valid {OFFER_VALIDITY_LABEL}.
                     </p>
                   </div>
                 </article>
 
                 <article itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="rounded-xl border border-ps-secondary bg-ps-bg p-4">
-                  <h3 id="faq-benefits" className="text-lg font-semibold text-ps-black">
-                    How does PacketStream benefit customers?
+                  <h3 id="faq-referral-code" className="text-lg font-semibold text-ps-black">
+                    What is the PacketStream referral code for 2026?
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      Customers benefit from PacketStream by gaining the ability to bypass geo-restrictions, scrape data without the risk of being blocked, and maintain anonymity online. Sign up with <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> for a free trial.
+                      The official PacketStream referral code is <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code>. You can copy the code directly on this page or use the automated sign-up link <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> to claim instant access.
                     </p>
                   </div>
                 </article>
 
                 <article itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="rounded-xl border border-ps-secondary bg-ps-bg p-4">
-                  <h3 id="faq-packeter" className="text-lg font-semibold text-ps-black">
-                    What are the advantages of sharing my bandwidth?
+                  <h3 id="faq-pricing" className="text-lg font-semibold text-ps-black">
+                    How much do PacketStream residential proxies cost per GB?
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      Becoming a Packeter enables you to earn passive income by sharing your unused bandwidth. With PacketStream, you can easily and securely monetize your internet connection. Learn more at <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">packetstream.io/share-bandwidth</a>.
+                      PacketStream residential proxies cost $1.00 USD per GB. There are no monthly commitments, subscription fees, or hidden charges. Pay only for the bandwidth you consume.
                     </p>
                   </div>
                 </article>
 
                 <article itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="rounded-xl border border-ps-secondary bg-ps-bg p-4">
-                  <h3 id="faq-reseller" className="text-lg font-semibold text-ps-black">
-                    Why should I consider becoming a PacketStream reseller?
+                  <h3 id="faq-app-download" className="text-lg font-semibold text-ps-black">
+                    How do I download the PacketStream app on Windows, Mac, Linux & Android?
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      Our reseller program is designed for businesses looking to expand their offerings. As a reseller, you can provide PacketStream&apos;s services under your own brand. See <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">Reseller API</a>. Use referral <code className="rounded bg-ps-secondary px-1 font-mono">{REFERRAL_CODE}</code> or <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a> to get started.
+                      To download the PacketStream app, register or log in at <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a>, navigate to the Downloads section in your dashboard, and install the client for Windows, macOS, Linux, or Android.
                     </p>
                   </div>
                 </article>
 
                 <article itemScope itemProp="mainEntity" itemType="https://schema.org/Question" className="rounded-xl border border-ps-secondary bg-ps-bg p-4">
-                  <h3 id="faq-privacy" className="text-lg font-semibold text-ps-black">
-                    How does PacketStream ensure the privacy of its network?
+                  <h3 id="faq-earn-money" className="text-lg font-semibold text-ps-black">
+                    How do Packeters earn passive income with PacketStream?
                   </h3>
                   <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p className="mt-2 text-ps-text-secondary">
-                      PacketStream employs IP anonymization, stripping of proxy headers, and rotating proxies to ensure anonymity and safety. Get started with the referral link: <a href={REFERRAL_LINK} rel="noopener noreferrer" className="font-medium text-ps-primary underline">{REFERRAL_LINK}</a>.
+                      Packeters earn $0.10 USD per GB of shared idle internet bandwidth. Simply keep the PacketStream application running in the background to automatically accumulate payouts requested via PayPal.
                     </p>
                   </div>
                 </article>

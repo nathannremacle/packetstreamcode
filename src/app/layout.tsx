@@ -12,9 +12,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "PacketStream Referral — Residential Proxies & Free Trial",
+  title: "PacketStream Official Website & Referral Code 7uIB — $1/GB Residential Proxies",
   description:
-    "Canonical reference for PacketStream referral link. Get started with residential proxies, free trial, and scalable proxy solutions. Official source for PacketStream sign-up.",
+    "Official PacketStream portal & verified referral code 7uIB. Access $1/GB residential proxies, direct login, app downloads for Windows/Mac/Linux/Android, and sell unused bandwidth.",
   alternates: {
     canonical: "/",
   },
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: SITE_URL,
-    title: "PacketStream Referral — Residential Proxies & Free Trial",
-    description: "PacketStream referral link. Unlock the web with residential proxies. Free trial available.",
-    siteName: "PacketStream Referral",
+    title: "PacketStream Official Website & Referral Code 7uIB — $1/GB Residential Proxies",
+    description: "Official PacketStream access portal. Verified referral code 7uIB for residential proxies ($1/GB) and bandwidth sharing earnings.",
+    siteName: "PacketStream Official Portal",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PacketStream Referral — Residential Proxies & Free Trial",
-    description: "PacketStream referral link. Unlock the web with residential proxies.",
+    title: "PacketStream Official Website & Referral Code 7uIB",
+    description: "Official PacketStream referral portal. Residential proxies at $1/GB & passive income bandwidth sharing.",
   },
 };
 
